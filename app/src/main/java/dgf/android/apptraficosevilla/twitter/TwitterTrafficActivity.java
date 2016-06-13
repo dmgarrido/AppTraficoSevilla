@@ -21,19 +21,17 @@ import io.fabric.sdk.android.Fabric;
 
 public class TwitterTrafficActivity extends AppCompatActivity {
 
-    final static String TWITTER_CONSUMER_KEY = "3vy8vM97RAqjFFBpRYcmOnrfq";
-    final static String TWITTER_CONSUMER_SECRET = "Zd7gNhnix2AjrXoWfmuxGsDPS3fH2a01glhFEs170tMdeqUwJN";
     final static String SEARCH_QUERY = "(from:@EmergenciasSev AND #Tráfico) OR (#DGTSevilla AND #DGT)";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_main);
         setContentView(R.layout.swipe_layout);
 
         ListView listView = (ListView)findViewById(R.id.list_view);
 
-        TwitterAuthConfig authConfig =  new TwitterAuthConfig(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET);
+        TwitterAuthConfig authConfig =  new TwitterAuthConfig(getApplicationContext().getResources().getString(R.string.twitter_consumer_key),
+                getApplicationContext().getResources().getString(R.string.twitter_consumer_secret));
         Fabric.with(this, new Twitter(authConfig));
 
         final SwipeRefreshLayout swipeLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefresh);
