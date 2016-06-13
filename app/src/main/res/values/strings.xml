@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">AppTraficoSevilla</string>
+
+    <string name="title_activity_maps">Tráfico Sevilla</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_detail">Tráfico Sevilla</string>
+    <string name="title_activity_twitter">Tráfico Sevilla en Twitter</string>
+
+    <string name="progress_msg_cargando">Cargando datos</string>
+
+    <string name="menu_option_refresh">Refresh</string>
+    <string name="menu_option_twitter">Twitter</string>
+
+    <string name="pref_checkLocation_key">pref_checkLocation</string>
+    <string name="pref_checkLocation_title">Activar localización</string>
+    <string name="pref_checkLocation_sum">Sólo se mostrarán los marcadores que se encuentren dentro
+        de la distancia máxima (definida más abajo) respecto de la posición actual</string>
+
+    <string name="pref_markers_key">pref_markersToShow</string>
+    <string name="pref_markers_title">Marcadores a mostrar</string>
+    <string name="pref_markers_default">Todos</string>
+
+    <string name="pref_maxDistance_key">pref_maxDistance</string>
+    <string name="pref_maxDistance_title">Distancia máxima (en metros)</string>
+    <string name="pref_maxDistance_default">200</string>
+
+    <array name="pref_markers_entries">
+        <item>Todos</item>
+        <item>Sólo tráfico intenso</item>
+        <item>Ninguno</item>
+    </array>
+
+    <array name="pref_markers_values">
+        <item>todos</item>
+        <item>intenso</item>
+        <item>ninguno</item>
+    </array>
+</resources>

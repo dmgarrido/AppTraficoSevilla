@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="@string/pref_markers_key"
+        android:title="@string/pref_markers_title"
+        android:defaultValue="@string/pref_markers_default"
+        android:entries="@array/pref_markers_entries"
+        android:entryValues="@array/pref_markers_values"/>
+
+    <CheckBoxPreference
+        android:key="@string/pref_checkLocation_key"
+        android:title="@string/pref_checkLocation_title"
+        android:summary="@string/pref_checkLocation_sum"
+        android:defaultValue="false"/>
+
+    <dgf.android.apptraficosevilla.settings.SeekBarPreference
+        android:key="@string/pref_maxDistance_key"
+        android:defaultValue="@string/pref_maxDistance_default"/>
+</PreferenceScreen>

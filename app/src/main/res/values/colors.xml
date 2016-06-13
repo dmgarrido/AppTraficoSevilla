@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a20025</color>
+    <color name="colorPrimaryDark">#8e0021</color>
+    <color name="colorAccent">#f0a30a</color>
+
+    <color name="colorMaterialIndigo500">#3F51B5</color>
+    <color name="colorMaterialIndigo700">#303F9F</color>
+    <color name="colorPinkAccent200">#FF4081</color>
+
+    <color name="nose">#f0a30a</color>
+    <color name="colorRed500">#F44336</color>
+    <color name="colorRed700">#D32F2F</color>
+</resources>
